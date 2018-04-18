@@ -14,7 +14,7 @@ i = 0
 for file in files:
     match1 = re.search(r"\-\d\d\d\_", str(file))
 	match2 = re.search(r"page\d\d\d", str(file))
-    if (match1 == true and match2 == false):
+	if (match1 == true and match2 == false):
         page = str(match.group(0))[1:4]
 	elif (match1 == false and match2 == true):
 		page = str(match.group(0))[4:7]
